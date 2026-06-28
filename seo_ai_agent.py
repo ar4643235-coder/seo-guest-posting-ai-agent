@@ -1,6 +1,6 @@
 """
 SEO Guest Posting AI Agent
-Decentralize AI Hackathon — Nosana Decentralized Compute Track
+Decentralize AI Hackathon - Nosana Decentralized Compute Track
 
 This agent automates:
 1. Keyword research
@@ -11,9 +11,6 @@ This agent automates:
 
 from transformers import pipeline
 
-# ----------------------------
-# Static / Template Functions
-# ----------------------------
 
 def generate_keywords(niche):
     keywords = [
@@ -53,11 +50,6 @@ def generate_outreach_email(website_name, niche):
     return email
 
 
-# ----------------------------
-# Real AI-Powered Function
-# Runs inference on Nosana decentralized GPU network
-# ----------------------------
-
 def ai_generate_content_idea(keyword, generator):
     """
     Uses a real Hugging Face text-generation model
@@ -74,10 +66,6 @@ def ai_generate_content_idea(keyword, generator):
     )
     return result[0]['generated_text']
 
-
-# ----------------------------
-# Demo / Test Run
-# ----------------------------
 
 if __name__ == "__main__":
     niche = "guest posting"
